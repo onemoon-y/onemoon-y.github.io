@@ -17,8 +17,9 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://yoursite.com/2020/04/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/cat.png">
 <meta property="og:image" content="http://yoursite.com/2020/04/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/totoro.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/flower.png">
 <meta property="article:published_time" content="2020-04-20T04:37:03.000Z">
-<meta property="article:modified_time" content="2020-04-24T11:44:27.725Z">
+<meta property="article:modified_time" content="2020-04-28T13:15:42.056Z">
 <meta property="article:author" content="Juzi DaDa">
 <meta property="article:tag" content="干货">
 <meta name="twitter:card" content="summary">
@@ -219,8 +220,9 @@
 
 </li>
 </ol>
-<p><img src="/2020/04/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/cat.png" alt="cat"><br>4. 在文件夹内初始化Git(创建Git仓库)<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd demol</span><br><span class="line">git init</span><br></pre></td></tr></table></figure><br>5. 创建文件<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch 文件名.文件类型</span><br></pre></td></tr></table></figure><br>6. 查看提交状态<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure><br>7. 添加仓库文件<br>   (1)将文件添加到暂存区<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add file</span><br></pre></td></tr></table></figure><br>   (2)将文件从暂存区添加到仓库<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &#39;操作描述&#39;</span><br></pre></td></tr></table></figure><br>   (3)往文件中添加内容<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vi file</span><br><span class="line">   </span><br></pre></td></tr></table></figure><br>      然后点击i ,才能进入type模式，推出先按ESC,再输入:wq enter键保存<br>      <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat file</span><br></pre></td></tr></table></figure><br>      查看文件内容<br><img src="/2020/04/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/totoro.png" alt="totoro"><br>8. 删除仓库文件<br>   (1)删除工作区文件<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -f file</span><br></pre></td></tr></table></figure><br>   (2)从Git中删除文件<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm </span><br></pre></td></tr></table></figure><br>   (3)提交<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &#39;操作描述&#39;</span><br></pre></td></tr></table></figure><br>9. git克隆<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone 仓库地址</span><br></pre></td></tr></table></figure><br>   将github远程仓库下载下来<br>10. 将本地仓库同步到git远程仓库中<br>    git<br>    私有项目，没有权限，输入用户名密码，或远程地址采用这种类型：<br>    vig .git/config<br>    将[remote “origin”]<br>      url = <a href="https://github.com/用户名/仓库名" target="_blank" rel="noopener">https://github.com/用户名/仓库名</a>.<br>    改为[remote “origin”]<br>      url = https://用户名:密码@github.com/用户名/仓库.git<br>11. 查看设置<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></p>
-<pre><code>![flower](git常用命令行/flower.png)</code></pre>
+<p><img src="/2020/04/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/cat.png" alt="cat"><br>4. 在文件夹内初始化Git(创建Git仓库)<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd demol</span><br><span class="line">git init</span><br></pre></td></tr></table></figure><br>5. 创建文件<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch 文件名.文件类型</span><br></pre></td></tr></table></figure><br>6. 查看提交状态<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure><br>7. 添加仓库文件<br>   (1)将文件添加到暂存区<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add file</span><br></pre></td></tr></table></figure><br>   (2)将文件从暂存区添加到仓库<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &#39;操作描述&#39;</span><br></pre></td></tr></table></figure><br>   (3)往文件中添加内容<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vi file</span><br><span class="line">   </span><br></pre></td></tr></table></figure><br>      然后点击i ,才能进入type模式，推出先按ESC,再输入:wq enter键保存<br>      <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat file</span><br></pre></td></tr></table></figure><br>      查看文件内容<br><img src="/2020/04/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/totoro.png" alt="totoro"><br>8. 删除仓库文件<br>   (1)删除工作区文件<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -f file</span><br></pre></td></tr></table></figure><br>   (2)从Git中删除文件<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm </span><br></pre></td></tr></table></figure><br>   (3)提交<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &#39;操作描述&#39;</span><br></pre></td></tr></table></figure><br>9. git克隆<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone 仓库地址</span><br></pre></td></tr></table></figure><br>   将github远程仓库下载下来<br>10. 将本地仓库同步到git远程仓库中<br>    git<br>    私有项目，没有权限，输入用户名密码，或远程地址采用这种类型：<br>    vig .git/config<br>    将[remote “origin”]<br>      url = <a href="https://github.com/用户名/仓库名" target="_blank" rel="noopener">https://github.com/用户名/仓库名</a><br>    改为[remote “origin”]<br>      url = https://用户名:密码@github.com/用户名/仓库.git<br>11. 查看设置<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></p>
+<p><img src="/2020/04/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/flower.png" alt="flower"></p>
+
                   
              
 
@@ -335,6 +337,20 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2020/04/28/mysql%E5%91%BD%E4%BB%A4/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          mysql命令
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
