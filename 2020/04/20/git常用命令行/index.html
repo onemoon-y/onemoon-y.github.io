@@ -15,15 +15,15 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="包括创建用户名、仓库、文件，并推到远端等">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://yoursite.com/2020/04/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/cat.png">
-<meta property="og:image" content="http://yoursite.com/2020/04/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/totoro.png">
-<meta property="og:image" content="http://yoursite.com/2020/04/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/flower.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/cat.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/totoro.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/flower.png">
 <meta property="article:published_time" content="2020-04-20T04:37:03.000Z">
-<meta property="article:modified_time" content="2020-05-27T02:14:59.005Z">
+<meta property="article:modified_time" content="2020-05-27T09:39:54.290Z">
 <meta property="article:author" content="Juzi DaDa">
 <meta property="article:tag" content="干货">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/04/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/cat.png">
+<meta name="twitter:image" content="http://yoursite.com/2020/04/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/cat.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -220,7 +220,7 @@
 
 </li>
 </ol>
-<p><img src="/2020/04/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/cat.png" alt="cat"><br>4. 在文件夹内初始化Git(创建Git仓库)<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd demol</span><br><span class="line">git init</span><br></pre></td></tr></table></figure><br>5. 创建文件<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch 文件名.文件类型</span><br></pre></td></tr></table></figure><br>6. 查看提交状态<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure><br>7. 添加仓库文件<br>   (1)将文件添加到暂存区<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add file</span><br></pre></td></tr></table></figure><br>   (2)将文件从暂存区添加到仓库<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &#39;操作描述&#39;</span><br></pre></td></tr></table></figure><br>   (3)往文件中添加内容<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vi file</span><br><span class="line">   </span><br></pre></td></tr></table></figure><br>      然后点击i ,才能进入type模式，推出先按ESC,再输入:wq enter键保存<br>      <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat file</span><br></pre></td></tr></table></figure><br>      查看文件内容<br><img src="/2020/04/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/totoro.png" alt="totoro"><br>8. 删除仓库文件<br>   (1)删除工作区文件<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -f file</span><br></pre></td></tr></table></figure><br>   (2)从Git中删除文件<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm </span><br></pre></td></tr></table></figure><br>   (3)提交<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &#39;操作描述&#39;</span><br></pre></td></tr></table></figure><br>9. git克隆<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone 仓库地址</span><br></pre></td></tr></table></figure><br>   将github远程仓库下载下来<br>10. 将本地仓库同步到git远程仓库中<br>    git<br>    私有项目，没有权限，输入用户名密码，或远程地址采用这种类型：<br>    vig .git/config<br>    将[remote “origin”]<br>      url = <a href="https://github.com/用户名/仓库名" target="_blank" rel="noopener">https://github.com/用户名/仓库名</a><br>    改为[remote “origin”]<br>      url = https://用户名:密码@github.com/用户名/仓库.git<br>11. 查看设置<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></p>
+<p><img src="git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/cat.png" alt="cat"><br>4. 在文件夹内初始化Git(创建Git仓库)<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd demol</span><br><span class="line">git init</span><br></pre></td></tr></table></figure><br>5. 创建文件<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch 文件名.文件类型</span><br></pre></td></tr></table></figure><br>6. 查看提交状态<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure><br>7. 添加仓库文件<br>   (1)将文件添加到暂存区<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add file</span><br></pre></td></tr></table></figure><br>   (2)将文件从暂存区添加到仓库<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &#39;操作描述&#39;</span><br></pre></td></tr></table></figure><br>   (3)往文件中添加内容<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vi file</span><br><span class="line">   </span><br></pre></td></tr></table></figure><br>      然后点击i ,才能进入type模式，推出先按ESC,再输入:wq enter键保存<br>      <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat file</span><br></pre></td></tr></table></figure><br>      查看文件内容<br><img src="git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/totoro.png" alt="totoro"><br>8. 删除仓库文件<br>   (1)删除工作区文件<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -f file</span><br></pre></td></tr></table></figure><br>   (2)从Git中删除文件<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm </span><br></pre></td></tr></table></figure><br>   (3)提交<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &#39;操作描述&#39;</span><br></pre></td></tr></table></figure><br>9. git克隆<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone 仓库地址</span><br></pre></td></tr></table></figure><br>   将github远程仓库下载下来<br>10. 将本地仓库同步到git远程仓库中<br>    git<br>    私有项目，没有权限，输入用户名密码，或远程地址采用这种类型：<br>    vig .git/config<br>    将[remote “origin”]<br>      url = <a href="https://github.com/用户名/仓库名" target="_blank" rel="noopener">https://github.com/用户名/仓库名</a><br>    改为[remote “origin”]<br>      url = https://用户名:密码@github.com/用户名/仓库.git<br>11. 查看设置<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></p>
 <ol start="12">
 <li><p>查看远程库信息</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
@@ -230,6 +230,39 @@
 </li>
 <li><p>关联origin的远程库并推上远程库</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:(github名)&#x2F;(git项目名).git </span><br><span class="line">git pull origin master</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看分支<br>本地分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+<p>远程分支</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch -r</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+<p>所有分支</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch -a</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+</li>
+<li><p>本地创建新的分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch [branch name]</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+<p>例如：git branch mas</p>
+</li>
+<li><p>切换到新的分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout [branch name]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建+切换分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b [branch name]</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将新分支推送到github</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin [branch name]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除本地分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch -d [branch name]</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除github远程分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin :[branch name]</span><br></pre></td></tr></table></figure>
+<p>分支名前面的冒号代表删除</p>
+<ol start="22">
+<li>删除commit记录<br>将分支切换到默认分支，然后执行下面两行代码<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard acb28f2114413378d48ae3b257dca62a1cd29d0f【想要恢复到的版本commit id】 </span><br><span class="line">git push origin HEAD --force</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">    </span><br></pre></td></tr></table></figure>
 
 </li>
 </ol>
@@ -237,7 +270,7 @@
 <li><a href="https://my.oschina.net/aibinxiao/blog/914726" target="_blank" rel="noopener">将idea的整个项目部署到github</a></li>
 <li><a href="https://www.cnblogs.com/gougouyangzi/articles/9429280.html" target="_blank" rel="noopener">将idea的文件上传到github</a></li>
 </ol>
-<p><img src="/2020/04/20/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/flower.png" alt="flower"></p>
+<p><img src="git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/flower.png" alt="flower"></p>
 
                   
              
