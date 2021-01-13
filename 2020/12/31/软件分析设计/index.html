@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>干货 | Hexo</title>
+  <title>软件分析设计 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="干货">
-<meta property="og:url" content="http://yoursite.com/%E5%B9%B2%E8%B4%A7/index.html">
+  <meta name="description" content="软件分析设计项目实践">
+<meta property="og:type" content="article">
+<meta property="og:title" content="软件分析设计">
+<meta property="og:url" content="http://yoursite.com/2020/12/31/%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E8%AE%BE%E8%AE%A1/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="软件分析设计项目实践">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-04-24T11:30:44.000Z">
-<meta property="article:modified_time" content="2020-04-24T11:30:44.805Z">
+<meta property="article:published_time" content="2020-12-31T07:58:03.000Z">
+<meta property="article:modified_time" content="2021-01-04T11:27:40.857Z">
 <meta property="article:author" content="Juzi DaDa">
 <meta name="twitter:card" content="summary">
   
@@ -178,20 +180,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-软件分析设计" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      干货
+      软件分析设计
     </h1>
   
 
         
-        <a href="/%E5%B9%B2%E8%B4%A7/index.html" class="archive-article-date">
-  	<time datetime="2020-04-24T11:30:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-24</time>
+        <a href="/2020/12/31/%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E8%AE%BE%E8%AE%A1/" class="archive-article-date">
+  	<time datetime="2020-12-31T07:58:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-31</time>
 </a>
         
 
@@ -205,7 +207,21 @@
     <div class="article-entry" itemprop="articleBody">
       
                 
-                      
+                      <h3 id="软件分析设计项目实践"><a href="#软件分析设计项目实践" class="headerlink" title="软件分析设计项目实践"></a>软件分析设计项目实践</h3><a id="more"></a>
+<h3 id="数据库设计"><a href="#数据库设计" class="headerlink" title="数据库设计"></a>数据库设计</h3><p>用户(顾客、员工、老板)<br>id,account,password,name,sex,tele,IDcard,address,datetime,category<br>会员<br>id,points<br>商品信息<br>id,name,RFID,cate_id,price,produc_img,inventory,detail<br>商品类别<br>id,cate_name,product_num<br>购物车<br>id,user_id,<br>购物车详情<br>id,cart_id,goods_id,quanity<br>活动<br>id,name,way<br>订单信息<br>order_id,order_number,user_id,create_time,total_price,status,pay_time,delivery_method,finish_time<br>订单明细<br>item_id,order_id,order_number,goods_id,goods_name,number,ori_price,dis_price</p>
+<h3 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h3><p>策略模式(活动的实现方式:计算折扣、买n送M；用户登录)<br>桥接模式(活动作为抽象，活动实现方式作为实体)<br>观察者模式(顾客下单，通知店铺职员、老板)<br>单例模式(在页面向顾客展示商品图片；只能创建一个Boss)<br>工厂模式()<br>责任链模式() 店铺职员发起进货申请，进货数量小于 500 时，由库存经理直接审批；大于 500 时，需由老板 Boss 审批。<br>建造者模式(订单具体建造者)<br>原型模式()<br>外观模式()</p>
+<h3 id="MVC结构"><a href="#MVC结构" class="headerlink" title="MVC结构"></a>MVC结构</h3><p>pojo 实体类，存储实体信息，包括简单的get(),set()方法<br>dao 实现对数据库的操作，daoImpl实现dao的方法<br>service 在dao层的基础上做一定调用<br>controller 调用service，连接view层</p>
+<p>pojo:<br>用户<br>商品详情<br>商品库存<br>商品类别<br>购物车<br>活动<br>订单</p>
+<p>dao:<br>UserDao<br>MemberDao<br>GoodsDao<br>CategoryDao<br>ActivityDao<br>CartDao<br>CartItemDao<br>OrderDao<br>OrderItemDao</p>
+<p>service:<br>UserService<br>MemberService<br>GoodsService<br>CategoryService<br>ActivityService<br>CartService<br>OrderService</p>
+<p>controller:</p>
+<p>interface Way{<br>    public int cal();  // 实现活动的具体实现方法<br>}</p>
+<p>class Discount implements Way{</p>
+<pre><code>@Override
+public int cal() {
+
+}</code></pre><p>}</p>
+
                   
              
 
@@ -297,7 +313,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://onemoon-y.github.io%E5%B9%B2%E8%B4%A7/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://onemoon-y.github.io2020/12/31/%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E8%AE%BE%E8%AE%A1/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -309,6 +325,25 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2021/01/11/%E6%AF%9B%E6%A6%82/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          毛概
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/11/02/%E8%BD%AF%E8%80%83%E7%9F%A5%E8%AF%86%E7%82%B9/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">软考知识点</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -372,7 +407,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
